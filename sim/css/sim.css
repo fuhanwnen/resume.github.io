@@ -1,0 +1,278 @@
+/*公共样式*/
+body{margin: 0;font-size: 14px;font-family: SimHei;}
+li{list-style: none;}
+p,h1,h2,h3,h4,ol,ul,li,dl{margin: 0;padding: 0;}
+a{text-decoration: none;}
+.content:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*公共样式结束*/
+
+
+div#box{
+width:500px;
+font-size:56px;
+margin:200px auto;
+}
+
+
+
+/*header 开始样式*/
+#header{width: 100%; min-width:900px;}
+.header_bg{
+  width: 100%;
+  height: 200px;
+  background: url("../img/head.png") no-repeat -350px 0;
+  position: relative;
+}
+.header_img{
+  float: left;
+  margin: 60px 100px;
+}
+.header_font{
+  float: right;
+  width: 255px;
+  height: 50px;
+  margin: -138px 436px;
+  color:#aaa;
+}
+.header_font p:last-child{
+  text-indent: 24px;
+  padding-top: 10px;
+}
+/*header 结束样式*/
+/*nav 导航开始*/
+#nav{
+  width: 100%;
+  min-width:900px;
+ border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  border-top: 3px solid #DCA0E6;
+  position: absolute;
+  top: 158px;
+  background-color: rgba(255,255,255,0.6);
+}
+.nav_ul{
+  width: 1200px;
+  margin: auto;
+}
+.nav_ul li a{
+  display: inline-block;
+  width: 100px;
+  line-height: 50px;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+}
+.nav_ul li:first-child a{
+  background: #DCA0E6;
+  color:#fff;
+}
+.nav_ul li a.three-d{
+  perspective: 200px;
+  -webkit-transition: all 0.7s linear ;
+  -moz-transition: all 0.7s linear ;
+  -ms-transition: all 0.7s linear ;
+  -o-transition: all 0.7s linear ;
+  transition: all 0.7s linear ;
+}
+.three-d:hover .three-d-box,
+.three-d:focus .three-d-box {
+  transform: translateZ(-25px) rotateX(90deg);
+}
+/*大span*/
+.three-d-box{
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: translateZ(-25px);
+  -moz-transform: translateZ(-25px);
+  -ms-transform: translateZ(-25px);
+  -o-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  posinter-events:none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.front {
+  transform: rotatex(0deg) translatez(25px);
+}
+.back {
+  transform: rotatex(-90deg) translatez(25px);
+  color: #fff;
+}
+.front, .back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.back{
+  background: #DCA0E6;
+}
+/*搜索框*/
+.nav_ul li:last-child{
+  float: right;
+  margin-right: 100px;
+  width: 360px;
+  line-height: 30px;
+  margin-top: 8px;
+  background-color: #F7A9FF;
+}
+.nav_ul li:last-child input {
+  height: 30px;
+  width: 290px;
+  border: 2px solid #DCA0E6;
+}
+.nav_ul li:last-child button{
+  width: 59px;
+  height: 35px;
+  border: none;
+  background-color:#F7A9FF ;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+}
+
+/*nav 导航结束*/
+/*section 主题开始*/
+#section{
+  width: 1200px;
+  min-width:900px;
+  margin:40px auto;
+}
+.section_accordion{
+  width: 800px;
+  position: relative;
+}
+.section_accordion ul li img{
+  width: 800px;
+  height: 300px;
+  display: block;
+}
+.section_accordion ul li.dot{
+  opacity:1;
+}
+.section_accordion ul li{
+  position: absolute;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  opacity:0;
+}
+.section_accordion ol{
+  z-index: 9;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  top: 270px;
+}
+.section_accordion ol li{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #ccc;
+  border-radius: 50%;
+}
+.section_accordion ol li.dot{
+  background: red;
+}
+
+/*right 个人介绍*/
+.section_introduce{
+  width: 350px;
+  height: 300px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  float: right;
+  border: 1px solid #ccc;
+}
+.section_introduce li{text-align: center;font-size: 24px;}
+.section_introduce li:first-child img{
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.section_introduce li:last-child{
+  margin-top: 20px;
+}
+/*section 主题内容结束*/
+/*外面的div 设置3D环境*/
+#stage{
+  width: 800px;
+  height: 400px;
+  margin: 100px auto;
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+/*给旋转元素的父元素设置:保留子元素的3d环境*/
+#parent{
+  width: 800px;
+  height: 400px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-20deg) rotateY(0deg);
+  transform:rotateX(-20deg) rotateY(0deg);
+}
+#parent li img{
+  width:300px;
+  height:200px;
+}
+#parent li{
+  width:300px;
+  height:200px;
+  position:absolute;
+  left:250px;
+  top:100px;
+  list-style: none;
+
+}
+#parent > li:nth-child(1){
+  -webkit-transform: translateZ(300px);
+  transform:translateZ(300px);
+}
+#parent li:nth-child(2){
+  transform:rotateY(60deg) translateZ(300px);
+
+}
+#parent li:nth-child(3){
+  transform:rotateY(120deg) translateZ(300px);
+}
+
+#parent li:nth-child(4){
+  transform:rotateY(180deg) translateZ(300px);
+}
+
+#parent li:nth-child(5){
+  transform:rotateY(240deg) translateZ(300px);
+}
+
+#parent li:nth-child(6){
+  transform:rotateY(300deg) translateZ(300px);
+}
+/*3D 旋转结束样式*/

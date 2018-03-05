@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  background: url(../img/bg.gif);
+  font-family: '微软雅黑';
+}
+
+div.box {
+  position: relative;
+  width: 796px;
+  height: 1125px;
+  background: url("../img/1.jpg");
+  margin: 150px auto;
+}
+
+div.header {
+  width: 730px;
+  height: 170px;
+  position: relative;
+  top: 33px;
+  left: 0;
+}
+
+div.header>div {
+  position: absolute;
+  display: inline-block;
+}
+
+div.header .header-left {
+  top: 30px;
+  left: 28px;
+}
+
+div.header .header-right {
+  top: 30px;
+  left: 150px;
+}
+
+/*个人介绍*/
+
+/**/
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+ul li {
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+/**/
+
+.section {
+  width: 286px;
+  height: 1000px;
+  position: relative;
+  top: 32px;
+  left: 26px;
+}
+
+/*个人介绍*/
+
+.personalIntroduce {
+  width: 305px;
+  height: 244px;
+  position: absolute;
+  /*margin-top: 5px;*/
+}
+
+.bg-img {
+  width: 28px;
+  height: 165px;
+  background: url("../img/2.png");
+  margin: 25px 0 0 10px;
+}
+
+.personalIntroduce ul li {
+  width: 240px;
+  height: 30px;
+  font-size: 14px;
+}
+
+/*自我评价*/
+
+.item0 {
+  top: 243px;
+}
+
+.item0>.text>p {
+  width: 100%;
+  margin: 10px 0 0 0;
+  text-indent: 2em;
+}
+
+/*职业技能*/
+
+.item1 {
+  top: 458px;
+}
+
+.item1>.text1>p {
+  width: 100%;
+  margin: 3px 0;
+}
+
+/*奖项荣誉*/
+
+.item2 {
+  top: 699px;
+}
+
+.text2>div {
+  margin-top: 10px;
+}
+
+.item2>.text2>p {
+  width: 100%;
+  text-indent: 2em;
+}
+
+/*右侧文本内容*/
+
+.section_right {
+  width: 459px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*字体*/
+
+.resuem {
+  width: 205px;
+  color: #fff;
+  font-size: 46px;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -70px;
+  top: 75px;
+}
+
+/*项目经验*/
+
+.demo {
+  width: 450px;
+  position: absolute;
+  top: 239px;
+  left: 30px;
+}
+
+.demo>h3 {
+  color: #000;
+  text-align: center;
+  margin-left: 35px;
+}
+
+.item p {
+  margin: 1px;
+}
+
+.item p:first-child {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/*教育背景*/
+
+.teach {
+  top: 674px;
+}
+
+/*工作经验*/
+
+.work {
+  top: 942px;
+}

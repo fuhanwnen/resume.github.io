@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+	 <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/2048.css"/>
+  <script src="js/animation.js"></script>
+  <script src="js/2048.js"></script>
+ </head>
+<style>
+	#box{
+	width:1200px;
+	font-size:56px;
+	margin:auto;
+		text-align: center;
+	}
+</style>
+ <body>
+	<div id="box">404！页面正在搭建！玩会游戏吧!</div>
+	<p>Score:<span id="score"></span>
+	&nbsp;Top:<span id="top"></span>
+	</p>
+	<div id="gridPanel">
+		
+	</div>
+	<div id="gameOver">
+		<div><!--背景div--></div>
+		<p><!--前景框-->
+			Game Over!<br>
+			Score:<span id="finalScore"></span><br>
+			<a class="button" onclick="game.start()">
+				Try again!
+			</a>
+		</p>
+	</div>
+ </body>
+</html>
