@@ -17,11 +17,11 @@ window.onload = function() {
 	var aDioAudio = oDio.getElementsByTagName('audio');
 	//第1个div的点击事件//当声音关闭和开启点击的时候
 	aNavDio[0].onclick = function() {
-		//如果声音是开启的	
+		//如果声音是开启的
 		if (aDioAudio[0].muted == false) {
 			dioAuto('0px', 'jingyin', 1);
 		} else {
-			//如果声音是关闭的					
+			//如果声音是关闭的
 			dioAuto('32px', 'bofang', 0);
 		}
 	}
@@ -65,7 +65,7 @@ window.onload = function() {
 		aBar3Auto(aBar1, 50, function() {
 			//停止掉定时器，不然会出现bug
 			clearInterval(aBar1.timer);
-			//然后开始执行第二个定时器	
+			//然后开始执行第二个定时器
 			setInterval(aBar2Auto, 1);
 		})
 	}, 1);
@@ -109,7 +109,7 @@ window.onload = function() {
 		a.style.MozTransform = 'rotate(' + a.num + 'deg)';
 		//兼容o度数不断的赋值
 		a.style.oTransform = 'rotate(' + a.num + 'deg)';
-		//兼容标准浏览器不断的赋值	
+		//兼容标准浏览器不断的赋值
 		a.style.Transform = 'rotate(' + a.num + 'deg)';
 	}
 	/*开机动画结束*/
@@ -120,7 +120,7 @@ window.onload = function() {
 	/*--工作经历页面开始--*/
 	//获取工作经历最大的div
 	var oWork = document.getElementById('work');
-	//获取工作经历第二大的div	
+	//获取工作经历第二大的div
 	var oWork1 = document.getElementById('work1');
 	//获取工作经历第三大的div
 	var aWork2 = oWork.getElementsByClassName('work2')[0];
@@ -135,11 +135,11 @@ window.onload = function() {
 	var aPort2 = oWork.getElementsByClassName('port2')[0];
 	//获取首页轮播第一个DIV
 	var oColl = document.getElementById('coll');
-	//获取首页轮播第二个DIV	
+	//获取首页轮播第二个DIV
 	var oColl1 = document.getElementById('coll1');
 	//获取自我描述轮播第一个DIV
 	var oXxbg = document.getElementById('xxbg');
-	//获取自我描述轮播第二个DIV	
+	//获取自我描述轮播第二个DIV
 	var oXxbg1 = document.getElementById('xxbg1');
 	//获取自我描述页面最后的焦点样式
 	var aBot1 = oXxbg1.getElementsByClassName('xxbot1')[0];
@@ -189,14 +189,12 @@ window.onload = function() {
 			shakeAuto();
 			aHeaderLi[1].onoff = false;
 		}
-
 		_this1 = 2;
 	}
 
 	function aHeaderLi2() {
 		cs();
 		tionAuto(aHeaderLi[2], oXxbg, 'hover');
-
 		if (_this1 == 1) {
 			aaaaAuto(3, 1, 2, oColl1, aHeaderLi[0], 2, 1, 3, oXxbg, aHeaderLi0, aHeaderLi1, null);
 		} else if (_this1 == 2) {
@@ -212,8 +210,6 @@ window.onload = function() {
 				aBot1.style.display = 'none';
 				aHeaderLi[2].onoff = false;
 			}, 3500)
-
-
 		}
 		_this1 = 3;
 	}
@@ -242,7 +238,6 @@ window.onload = function() {
 			//d.style.WebkitTransform = 'translateZ('+d.num+'px)';//不断的放大第二个div
 			transformAuto(d, d.num);
 		}, 10)
-
 	}
 	/*初始化*/
 	function tionAuto(obj, obj1, a) {
@@ -258,7 +253,6 @@ window.onload = function() {
 		transformAuto(oXxbg, 0);
 		opa(obj1, 1); //第二个为显示
 		oXxbg1.className = a;
-
 	}
 
 	function transformAuto(obj, a) {
@@ -266,15 +260,12 @@ window.onload = function() {
 		obj.style.MozTransform = 'translateZ(' + a + 'px)';
 		obj.style.OTransform = 'translateZ(' + a + 'px)';
 		obj.style.transform = 'translateZ(' + a + 'px)';
-
 	}
 
 	function aBot1Auto() {
 
 	}
 	/*导航点击结束*/
-
-
 
 	/*轮播效果开始*/
 	var aDian = getElementsByClassName(oColl, 'div', 'dian');
@@ -294,8 +285,6 @@ window.onload = function() {
 	var aClose = oCase.getElementsByClassName('close');
 	var aRiT = oColl.getElementsByClassName('ri_t');
 	/*遮罩层结束*/
-
-
 
 	for (var i = 0; i < oCollLi.length; i++) {
 		aQx222[i].index = i;
@@ -435,6 +424,7 @@ window.onload = function() {
 	var aBut = document.getElementsByClassName('but')[0];
 	var str = '';
 	for (var i = 0; i < oCollLi.length; i++) {
+		// console.log(oCollLi.length)
 		str += '<li></li>';
 	}
 	aBut.innerHTML = str;
@@ -622,7 +612,7 @@ window.onload = function() {
 		var arrColor = ['rgba(0,190,190,0.15)', 'rgba(0,190,190,0.8)']; //4个圈的颜色
 
 		for (var i = 0; i < arrNum.length; i++) {
-			var agNum = arrNum[i] / 100 * angle; //每个圆环占的角度 
+			var agNum = arrNum[i] / 100 * angle; //每个圆环占的角度
 			sunNum += agNum; //每次循环都累加上一次的角度
 			if (i == arrNum.length - 1) {
 				sunNum = 360;
